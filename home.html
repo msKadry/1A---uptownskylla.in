@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="homeStyle.css" type="text/css"/>
+    <link rel="stylesheet" href="media.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="header-Main-Div">
+            <i class="fa-solid fa-bars menuIcon"></i>
+            <div class="logoDiv">
+                <img src="img/logo.png" width="100px" height="130px"/>
+            </div>
+            <div class="menu-div">
+                <ul class="menu-ul">
+                    <li>home</li>
+                    <li>Location</li>
+                    <li>Site Plan</li>
+                    <li>Floor Plan</li>
+                    <li>Club Skylla</li>
+                    <li>Price List</li>
+                    <li>Gallery</li>
+                    <li>Compliances</li>
+                </ul>
+                <ul class="menu-ul-Contact">
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="section-2-main-div">
+
+        </div>
+    </section>
+    
+</body>
+
+<script>
+    let menuIcon = document.querySelector('.menuIcon')
+    let menuDiv = document.querySelector('.menu-div')
+
+    menuIcon.addEventListener('click' , function(){
+
+        menuDiv.classList.toggle('menu-div-oppen')
+        // <i class="fa-regular fa-circle-xmark"></i>
+        menuIcon.classList.toggle('fa-bars')
+        menuIcon.classList.toggle('fa-circle-xmark')
+        menuIcon.classList.toggle('fa-solid')
+        menuIcon.classList.toggle('fa-regular')
+
+        
+
+
+
+    })
+
+</script>
+
+</html>
